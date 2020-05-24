@@ -13,7 +13,7 @@ flags = tf.app.flags # Pass the parameters
 # ** == we can change for the model
 
 # Default parameters
-flags.DEFINE_integer("train_epoch", 3000, "Epoch to train")
+flags.DEFINE_integer("train_epoch", 30, "Epoch to train")
 flags.DEFINE_integer("dim_unigram", 82, "Dimension of input, 42 or 82")
 flags.DEFINE_integer("dim_bigram", 1876, "Dimension of input, 925 or 1876")
 flags.DEFINE_integer("dim_trigram", 14767, "Dimension of input, 8573 or 14767")
@@ -23,7 +23,7 @@ flags.DEFINE_integer("dim_output", 18, "Dimension of output, 95 or 127") # *** N
 flags.DEFINE_integer("max_time_step", 50, "Maximum time step of RNN") # Origin value is 60, now change to optimal
 flags.DEFINE_integer("min_grad", -5, "Minimum gradient to clip")
 flags.DEFINE_integer("max_grad", 5, "Maximum gradient to clip")
-flags.DEFINE_integer("batch_size", 1000, "Size of batch") # Origin value is 300, now change to optimal
+flags.DEFINE_integer("batch_size", 300, "Size of batch") # Origin value is 300, now change to optimal
 
 flags.DEFINE_integer("ngram", 3, "Ngram feature when ensemble = False.") # *** 
 

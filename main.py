@@ -190,9 +190,9 @@ saved_params = { # Manually input the flags above so that we could interact with
     "model_name" : "default",
     "checkpoint_dir" : "./checkpoint/",
     "data_dir" : "./data/test",
-    "valid_result_path" : "/CS230/result/validation",
-    "pred_result_path" : "/CS230/result/pred.txt",
-    "detail_result_path" : "/CS230/result/detail.txt"
+    "valid_result_path" : "/result/validation",
+    "pred_result_path" : "/result/pred.txt",
+    "detail_result_path" : "/result/detail.txt"
 }
 
 

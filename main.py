@@ -232,7 +232,7 @@ def main(_):
         bi_init = get_char2vec(dataset[0][1][:], params['dim_embed_bigram'], dataset[3][4]) # The first [] is the outermost dimension == train_set or dictionary; [3][i] gives the outermost dimension in dictionary
         tri_init = get_char2vec(dataset[0][2][:], params['dim_embed_trigram'], dataset[3][5]) # Easy to understand with get_data()
         
-        print(model_name, 'Parameter sets: ', end='')
+        #print(model_name, 'Parameter sets: ', end='')
         pprint.PrettyPrinter().pprint(combination)
         
         rnn_model = RNN(params, [uni_init, bi_init, tri_init])

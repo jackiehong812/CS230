@@ -41,6 +41,7 @@ def get_ethnicity_data(data_dir, params):
         for file_cnt, file_name in enumerate(sorted(files)):
             data = open(os.path.join(root, file_name))
             file_len = 0
+            data_length = len(open(os.path.join(root, file_name)).readlines())
             
             if file_name == '0_unigram_to_idx.txt':
                 for k, line in enumerate(data):

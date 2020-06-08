@@ -138,7 +138,7 @@ def sample_parameters(params):
     return params, combination
 
 saved_params = { # Manually input the flags above so that we could interact with the variables below
-    'train_epoch' : 100,
+    'train_epoch' : 30,
     "dim_unigram" : 82,
     "dim_bigram" : 1876,
     "dim_trigram" : 14767,

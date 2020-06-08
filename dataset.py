@@ -104,7 +104,10 @@ def get_ethnicity_data(data_dir, params):
                     else:
                         labels.append(nationality)
                     file_len = k + 1
-
+                    
+                    if len(length_set) >= data_length // 10:
+                        break
+                    
                 if 'train' in file_name:
                     train_set = [unigram_set, bigram_set, trigram_set, length_set, labels]
                 elif 'valid' in file_name:
